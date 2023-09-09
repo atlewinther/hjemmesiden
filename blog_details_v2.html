@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- REMIX IXĆON -->
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+     <link rel="stylesheet" href="css/style.css">
+    <title>Atle Winthers Blog</title>
+</head>
+<body>
+ <!-- HEADER -->
+<header class="header" id="header">
+    <nav class="nav container">
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li>
+                    <a href="index.html" class="nav__link">Hjem</a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="nav__link">Kontakt</a>
+                </li>
+
+            </ul>
+            <div class="nav__close" id="nav-close">
+                <i class="ri-close-circle-line"></i>
+            </div>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-fill"></i>
+        </div>
+    </nav>
+</header>  
+
+<!-- BLOG DETAILS -->
+<div class="blog__header"></div>
+
+<section class="container">
+    <div class="blog__details">
+        <a href="index.html" class="back__to-home text-xs">
+            <i class="ri-arrow-left-right-line"></i>
+        </a>
+
+        <h3 class="post__details-title text-lg">Så kom jeg i luften</h3>
+        <p class="post__details-date text-sm">August, 2023</p>
+        <p class="post__details text-lg">
+            atlewinther.dk-siden har jeg haft ligeså længe at jeg har kodet HTML. Det er en sandkasse for mig, hvor jeg har prøvet alle mulige ting af. Jeg har fx eksperimenteret med Flash, Wordpress, Joomla, Drupal, HTML, CSS, PHP, JavaScript, NodeJS, React, TypeScript, you name it. <br>
+            <br>
+            Efter en virkelig fed sommerferie, fik jeg taget mig sammen til at udvikle en ny hjemmeside. Det er jo lidt som da man var barn og legede i sandkassen, hvor man hele tiden fik nye ideer til at bygge noget større op og skabte nyt undervejs. Det er på præcis den samme måde med min webudvikling anno 2023 :P . Derfor blev 
+            jeg også nødt til at tænke på om jeg simpelthen var nødt til at lave en midlertidig side imens jeg arbejder på den store og betydeligt mere komplekse hjemmeside. Det kom der så denne side ud af. Den er lavet i HTML, CSS og JavaScript - med et par underbiblioteker til swiper og mixitup.<br> Æstetisk vil jeg gerne holde den i så simple linjer og farver som muligt, hvilket jeg må siges at være kommet meget godt ud af. Skyggerne i boksene og de lidt tykke pixelstørrelser synes jeg i hvert fald giver siden en meget fin balance.<br><br>
+            Jeg vil jo rigtig gerne opdatere på siden, men kender mig selv godt nok til at vide, at det er lettere sagt end gjort. 
+
+        </p>
+       
+
+        <figure>
+            <img src="img/pexels-pixabay-235990.jpg" alt="sten i balance">
+        </figure>
+      
+
+        <p class="post__details text-lg">
+           Tak fordi du besøger min blog og skulle du i øvrigt sidde og tænke hvad den store og langt mere komplekse hjemmeside kommer til at være bygget op om, kan jeg sige så meget at jeg bruger NodeJS, React, Mongo og så er der alle de grafiske elementer. 
+        </p>
+
+        <div class="post__social-share">
+            <span class="post__share text-lf">Del min tekst</span>
+            <div class="post__social-links">
+                <a href="" class="post__share-link"><i class="ri-linkedin-box-fill"></i></a>
+                <a href="" class="post__share-link"><i class="ri-facebook-box-fill"></i></a>
+            </div>
+        
+        </div>
+    </div>
+</section>
+
+    <!--KONTAKT-->
+    <section class="contact section" id="contact">
+        <div class="contact__content container">
+            <h2 class="section__title">Sig hej_</h2>
+
+            <div class="contact__container grid">
+                <div class="contact__info">
+                    <dl class="contact__list">
+                        <dt>mobil</dt>
+                        <dd>-</dd>
+                        <dt>Skype: </dt>
+                        <dd> - </dd>
+                        <dt>mail: </dt>
+                        <dd>atle@atlewinther.dk</dd>
+                    </dl>
+
+                    <ul class="contact__socials">
+                        <li>
+                            <a href="https://journalistforbundet.dk/freelancer/atle-m-g-winther" class="contact__social_link">Journalistforbundet</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/atle.winther/" class="contact__social_link">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://mograph.social/@atle" class="contact__social_link">Mastodon</a>
+                        </li>
+                        <li>
+                            <a href="https://blog.folkeskolen.dk/atle-winther" class="contact__social_link">Folkeskolen-blog</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contact__form">
+                    <p class="contact__form-title">Skriv her__</p>
+
+                    <form action="" id="contact-form">
+                        <div class="contact__input-div">
+                            <input 
+                            type="text" 
+                            name="name"
+                            placeholder="Dit navm"
+                            class="contact__input"
+                            id="contact-name">
+                        </div>
+                        <div class="contact__input-div">
+                            <input 
+                            type="email" 
+                            name="email"
+                            placeholder="Din mail"
+                            class="contact__input"
+                            id="contact-email">
+                        </div>
+                        <div class="contact__input-div">
+                            <textarea 
+                            name="message"
+                            placeholder="Skriv din besked her" 
+                            class="contact__input textarea"
+                            id="message" 
+                            cols="30" 
+                            rows="10">
+                        </textarea>
+                        </div>
+
+                        <p class="contact__message text" id="contact-message">
+                            Besked
+                        </p>
+                        <button type="submit" class="button contact__button">SEND</button>
+                    </form>
+                    <p class="footer__copy">Atle Winther 2023</p>
+               </div>
+              </div>
+           </div>
+      </section>
+
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+      <script src="script/common.js"></script>
+      <script src="script/nav.js"></script>
+
+</body>
+</html>
