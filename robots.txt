@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /script/
+Disallow: /css/
+Disallow: /cookies.html/
+Sitemap: http://www.atlewinther.dk/sitemap.xml

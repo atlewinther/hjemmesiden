@@ -1,21 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jeg udvikler hjemmesider, apps til iOS, fotos, spil og underviser og laver workshops indenfor forskellige former for programmering og it. Åben for nye projekter."/>
-    
+    <meta property="og:title" content="3D Grafik, Programmering, Webdesign, Fotos, Bøger og Friluftsliv">
+    <meta property="og:description" content="Digitale løsninger skræddersyet til webdesign, 3D-modellering, spil og app-udvikling. Jeg er drevet af at skabe teknologiske innovationer med fokus på tilgængelighed for personer med funktionsnedsættelse. Uanset om du har brug for en handicapvenlig hjemmeside, en imponerende 3D-visning eller en tilgængelig mobilapp, er jeg altid klar til at omsætte dine idéer til brugervenlige og inkluderende digitale oplevelser. Kontakt mig i dag for at gøre din online tilstedeværelse mere tilgængelig og engagerende for alle.">
+    <meta property="og:image" content="https://atlewinther.dk/img/project1.jpeg">
+    <meta property="og:url" content="https://atlewinther.dk">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="da">
+
+    <meta name="description" content="Digitale Løsninger: Webdesign, 3D og App-udvikling med Tilgængelighed for Personer med Funktionsnedsættelse">
+  
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MS1317Q5Z1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MS1317Q5Z1');
+</script>
+
+
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Udvikler",
+      "image": [
+        "https://atlewinther.dk/img/programmering.jpg",
+        "https://atlewinther.dk/img/IMG_3270.jpg",
+        "https://atlewinther.dk/img/DJI_0147-HDR-2.jpg"
+       ],
+      "name": "Atle Online",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "København",
+        "addressRegion": "Region Hovedstaden",
+        "addressCountry": "DK"
+      },
+      
+      "url": "https://www.atlewinther.dk",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Tirsdag",
+            "Torsdag"
+          ],
+          "opens": "08:30",
+          "closes": "15:00"
+        },
+      ],
+    }
+</script>
+  <link rel="canonical" href="https://atlewinther.dk">
 
     <!-- REMIX IXĆON -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <!-- SWIPTER JS-->
     <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-/>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Atle Winther - Digitale Løsninger & Undervisning</title>
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link href="css/mini.style.css" rel="stylesheet">
+    <link href="css/mini.style.css" rel="stylesheet" media="all">
+
+    <title>3D Grafik, Programmering, Webdesign, Fotos, Bøger og Friluftsliv</title>
 </head>
 <body>
 <!-- HEADER -->
@@ -24,29 +78,29 @@
         <div class="nav__menu" id="nav-menu" >
             <ul class="nav__list">
                 <li>
-                    <a href="#home" class="nav__link active-link">Hjem</a>
+                    <a href="#home" aria-label="hjem" class="nav__link">Hjem</a>
                 </li>
 
                 <li>
-                    <a href="#foto" class="nav__link">Foto</a>
+                    <a href="#foto" aria-label="mine foto" class="nav__link">Foto</a>
                 </li>
 
                 <li>
-                    <a href="#services" class="nav__link">Services</a>
+                    <a href="#services" aria-label="mine services" class="nav__link">Services</a>
                 </li>
 
              
 
                 <li>
-                    <a href="#portfolio" class="nav__link">Portfolio</a>
+                    <a href="#portfolio" aria-label="mit portfolio" class="nav__link">Portfolio</a>
                 </li>
 
                 <li>
-                    <a href="#blog" class="nav__link">Blog</a>
+                    <a href="#blog" aria-label="mine blog" class="nav__link">Blog</a>
                 </li>
 
                 <li>
-                    <a href="#contact" class="nav__link">Kontakt</a>
+                    <a href="#contact" aria-label="kontakt mig" class="nav__link">Kontakt</a>
                 </li>
             </ul>
             <div class="nav__close" id="nav-close">
@@ -59,7 +113,7 @@
     </nav>
 </header>
 
-<!--------- MAIN -----------> 
+<!--MAIN--> 
 <main class="main">
     <section class="home" id="home">
   
@@ -75,7 +129,7 @@
                 <div class="shape"></div>
                 <div class="shape"></div>
               </div>
-            <class class="home__data" >
+            <div class="home__data" >
                 <h1 class="home__name">Atle Winther</h1>
                 <p class="home__work">- digitale projekter</p>
                 <dl class="home__list">
@@ -88,15 +142,16 @@
                     <dt>adresse</dt>
                     <dd>København</dd>
                 </dl>
-                <class class="home__socials">
-                    <a href="https://github.com/atlemgw" target="_blank" class="home__social-link"><i class="ri-github-fill"></i></a>
-                    <a href="https://mograph.social/@atle" target="_blank" class="home__social-link"><i class="ri-mastodon-fill"></i></a>
-                    <a href="https://www.instagram.com/atle.winther/" target="_blank" class="home__social-link"><i class="ri-instagram-line"></i></a>
-                    <a href="https://vimeo.com" target="_blank" class="home__social-link"><i class="ri-vimeo-fill"></i></a>
-                </class>
-            </class>
+                <div class="home__socials">
+                    <a href="https://github.com/atlemgw" aria-label="Se mere på Github" target="_blank" class="home__social-link"><i class="ri-github-fill"></i></a>
+                    <a href="https://mograph.social/@atle" aria-label="Se mere på Mograph" target="_blank" class="home__social-link"><i class="ri-mastodon-fill"></i></a>
+                    <a href="https://www.instagram.com/atle.winther/" aria-label="Se min instagram" target="_blank" class="home__social-link"><i class="ri-instagram-line"></i></a>
+                    <a href="https://vimeo.com" aria-label="Vimeo" target="_blank" class="home__social-link"><i class="ri-vimeo-fill"></i></a>
+                </div>
+            </div>
             
         </div>
+        
     </section>
 
     <section class="hello section container">
@@ -108,14 +163,10 @@
          
         <p class="hello__details text-lg">
             
-            Velkommen til min hjemmeside, som jeg bruger til at skrive lidt om mine digitale og visuelle projekter, og hvor jeg også vil komme med eksempler(scener, noter, tutorials mv.) på mit arbejde. Mine samarbejder og kunder tæller blandt andre Det Kongelige Teater, Folketinget, Syddansk Universitet, Gifted Children, Gesundhet CPH, Kulturnatten mfl. Pt. er jeg åben for nye projekter.  <br><br>Med devisen om "mennesker før teknologier" er jeg drevet af at skabe meningsfulde løsninger, og uanset om det er pixels, foto, web eller programmering, så møder jeg ethvert nyt projekt med et nysgerrigt blik. Netop derfor er jeg 
-            heller ikke fastlåst i bestemte teknologier og metoder.<br>
-            Medlem af <a href="https://journalistforbundet.dk/freelancer/atle-m-g-winther">Journalistforbundet</a>.<br>
+            Jeg er stærkt drevet af filosofien om <a href="https://opensource.org/osd" aria-label="Læs mere om Open Source Definition på opensource.org">Open Source</a>, og jeg tror på mennesker før teknologier. Webbet er for alle, og netop derfor er det særligt vigtigt for mig at understrege, at 
+            jeg lever op til både <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fatlewinther.dk%2F" aria-label="Læs mere på W3C">W3C</a>-standarderne samt <a href="https://www.w3.org/WAI/standards-guidelines/wcag">WCAG 2 AA</a> og WAI's Web Accessibillity Initiative. <br><br>Vælger du at få udviklet et website eller en anden digital løsning hos mig, er du altid garanteret demokratiske og inkluderende løsninger; uanset om det er pixels, foto, web eller programmering.
             
-        </p>
-        <a href="" class="button button--flex text-sm">
-            <i class="ri-download-line"></i> DOWNLOAD CV
-        </a>
+        
     </section>
 
 
@@ -128,12 +179,37 @@
 
         
            <div class="image-grid">
-            <img class="image-grid-col-2 image-grid-row-2" src="img/DJI_0147-HDR-2.jpg" alt="Kronborg" >
-            <img src="img/kbhv.jpg" alt="København" >
-            <img src="img/orsted.jpg" alt="Ørstedparken" >
+            <img class="image-grid-col-2 image-grid-row-2" src="https://awonline.b-cdn.net/DJI_0147-HDR-2.avif" 
+            srcset="https://awonline.b-cdn.net/DJI_0147-HDR-2_medium.avif 640w, 
+            https://awonline.b-cdn.net/DJI_0147-HDR-2_small.avif 320w, 
+                https://awonline.b-cdn.net/DJI_0147-HDR-2.avif 768w" 
+                sizes="50vw" 
+            alt="Kronborg" >
+            <img src="https://awonline.b-cdn.net/kbhv.avif" 
+            srcset="https://awonline.b-cdn.net/kbhv_medium.avif 640w, 
+            https://awonline.b-cdn.net/kbhv_small.avif 320w, 
+                https://awonline.b-cdn.net/kbhv.avif 768w" 
+                sizes="50vw"
+            alt="København" >
+            <img src="https://awonline.b-cdn.net/orsted.avif" 
+            srcset="https://awonline.b-cdn.net/orsted_medium.avif 640w, 
+            https://awonline.b-cdn.net/orsted_small.avif 320w, 
+                https://awonline.b-cdn.net/orsted.avif 768w" 
+                sizes="50vw" 
+            alt="Ørstedparken" >
 
-            <img src="img/nordhavn.jpg" alt="Helsingør Nordhavn" >
-            <img src="img/DJI_0798-HDR.jpg" alt="Christiansborg" >
+            <img src="https://awonline.b-cdn.net/nordhavn.avif" 
+            srcset="https://awonline.b-cdn.net/nordhavn_medium.avif 640w, 
+            https://awonline.b-cdn.net/nordhavn_small.avif 320w, 
+                https://awonline.b-cdn.net/nordhavn.avif 768w" 
+                sizes="50vw" 
+            alt="Helsingør Nordhavn" >
+            <img src="https://awonline.b-cdn.net/DJI_0798-HDR.avif" 
+            srcset="https://awonline.b-cdn.net/DJI_0798-HDR_medium.avif 640w, 
+            https://awonline.b-cdn.net/DJI_0798-HDR_small.avif 320w, 
+                https://awonline.b-cdn.net/DJI_0798-HDR.avif 768w" 
+                sizes="50vw" 
+            alt="Christiansborg" >
            </div>
      
 
@@ -148,55 +224,60 @@
         <div class="services__container grid">
             <div class="services__item" >
                 <div class="icon__box">
-                    <img src="img/css_1085814.png" alt="webdesign ikon" class="services__icon"/>
+                    <img src="img/css_1085814.png" width="32" height="32"
+                    alt="webdesign ikon" class="services__icon">
                     <div class="services__dot">
                         <span class="dot"></span>
                     </div>
                 </div>
 
                 <div class="h3 servies__title text-lg">Web</div>
-                <p class="services__detail">Udvikling af hjemmesider sker altid med fokus på brugeroplevelse og interaktion. Jeg er som sagt ikke fastlåst i en bestemt teknolog, men forsøger at spænde bredt - uden at overkomplicere.</p>
+                <p class="services__detail">Udvikling af hjemmesider sker altid med fokus på brugeroplevelse og interaktion. Jeg er ikke fastlåst i en bestemt teknolog og forsøger at spænde bredt - uden at overkomplicere.</p>
             </div>
 
             <div class="services__item">
                 <div class="icon__box">
-                    <img src="img/smartphone_1968584.png" alt="smartphone ikon" class="services__icon"/>
+                    <img src="img/smartphone_1968584.png" width="32" height="32"
+                    alt="smartphone ikon" class="services__icon">
                     <div class="services__dot">
                         <span class="dot"></span>
                     </div>
                 </div>
 
                 <div class="h3 servies__title text-lg">Apps</div>
-                <p class="services__detail">Jeg udvikler apps til iOS og iPad. <br>Mit fokus er indenfor det kulturelle, sociale og specialundervisning spektrum. </p>
+                <p class="services__detail">Mit fokus er primært indenfor de kulturelle, sociale samt didaktiske -og specialpædagogiske områder. </p>
             </div>
 
             <div class="services__item">
                 <div class="icon__box">
-                    <img src="img/console_686589.png" alt="consol ikon" class="services__icon"/>
+                    <img src="https://awonline.b-cdn.net/disabled.avif" width="32" height="32"
+                    alt="rullestol ikon" class="services__icon">
                     <div class="services__dot">
                         <span class="dot"></span>
                     </div>
                 </div>
 
-                <div class="h3 servies__title text-lg">Spiludvikling</div>
-                <p class="services__detail">Jeg benytter Godot Engine til undervisning og egen produktion af spil. Det er en ukompliceret engine og indeholder alligevel så utroligt mange muligheder for at udvikle gode og komplekse spil. </p>
+                <div class="h3 servies__title text-lg">Inklusion</div>
+                <p class="services__detail">Jeg ønsker at skabe digitale oplevelser, der er inkluderende for alle. Uanset om det er tilpasning af hjemmesider, udvikling af brugervenlige apps eller skabelse af engagerende 3D-oplevelser.  </p>
             </div>
 
             <div class="services__item">
                 <div class="icon__box">
-                    <img src="img/3d-model_2818102.png" alt="3D ikon" class="services__icon"/>
+                    <img src="img/3d-model_2818102.png" width="32" height="32"
+                    alt="3D ikon" class="services__icon">
                     <div class="services__dot">
                         <span class="dot"></span>
                     </div>
                 </div>
 
                 <div class="h3 servies__title text-lg">3D</div>
-                <p class="services__detail">Med 15 års erfaring med 3D modellering og effekter, har jeg været vidt omkring software og interessefelter. I dag er mit fokus på undervisning og specialdesign indenfor VFX og spil.</p>
+                <p class="services__detail">Siden 2008 har jeg været vidt omkring software og interessefelter indenfor 3D. I dag er mit fokus på undervisning og den tekniske del.</p>
             </div>
 
             <div class="services__item">
                 <div class="icon__box">
-                    <img src="img/camera-drone_7504454.png" alt="drone ikon" class="services__icon"/>
+                    <img src="img/camera-drone_7504454.png" width="32" height="32"
+                    alt="drone ikon" class="services__icon">
                     <div class="services__dot">
                         <span class="dot"></span>
                     </div>
@@ -208,7 +289,8 @@
 
             <div class="services__item">
                 <div class="icon__box">
-                    <img src="img/teacher_3307318.png" alt="underviser" class="services__icon"/>
+                    <img src="img/teacher_3307318.png" width="32" height="32"
+                    alt="underviser" class="services__icon">
                     <div class="services__dot">
                         <span class="dot"></span>
                     </div>
@@ -279,7 +361,7 @@
                 </div>
             </div>
             <div class="skills__content">
-                <h3 class="skills__title text-sm">ANDET</h3>
+                <h3 class="skills__title2 text-sm">ANDET</h3>
 
                 <div class="skills__list grid">
                     <div class="skills__data">
@@ -333,7 +415,7 @@
     </section>
 
     <!-- PROJECTS -->
-    <section class="work section container" data-aos="fade-left" id="portfolio">
+    <section class="work section container" id="portfolio">
         <h2 class="section__title">Projekter_</h2>
 
         <div class="project__categories">
@@ -345,10 +427,13 @@
         </div>
 
         <div class="projects__container grid">
-            <div class="project__item grid mix digital" data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000">
-                <img src="img/project1.jpeg" alt="3d blæk simulation" class="project__img">
+            <div class="project__item grid mix digital">
+                <img src="https://awonline.b-cdn.net/project1.avif" 
+                srcset="https://awonline.b-cdn.net/project1_medium.avif 640w, 
+                https://awonline.b-cdn.net/project1_small.avif 320w, 
+                https://awonline.b-cdn.net/project1.avif 768w" 
+                sizes="50vw" 
+                alt="3d blæk simulation" class="project__img">
                 <div class="project__data">
                     <h3 class="project__title text-lg">3D-blæk lavet i Houdini</h3>
                     <p class="project__description">Blæk-simulation, lavet i Houdini og renderet i Mantra. Simulationen fylder næsten 8GB og udregningen tog et par dage.
@@ -360,15 +445,18 @@
                     <li>Mantra</li>
                     </ul>
 
-                    <a href="https://www.youtube.com/watch?v=F82HaUICOj4" class="project__link text-sm">video</a>
+                    <a href="https://www.youtube.com/watch?v=F82HaUICOj4" aria-label="Se video på youtube" class="project__link text-sm">video</a>
                    
                 </div>
             </div>
 
-            <div class="project__item grid mix foto" data-aos="flip-right"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000">
-                <img src="img/IMG_1451.JPG" alt="dronefoto af ørrstedparken" class="project__img">
+            <div class="project__item grid mix foto">
+                <img src="https://awonline.b-cdn.net/IMG_1451.avif" 
+                srcset="https://awonline.b-cdn.net/IMG_1451_medium.avif 640w, 
+                https://awonline.b-cdn.net/IMG_1451_small.avif 320w, 
+                https://awonline.b-cdn.net/IMG_1451.avif 768w" 
+                sizes="50vw" 
+                alt="dronefoto af ørrstedparken" class="project__img">
                 <div class="project__data">
                     <h3 class="project__title text-lg">Ørstedparken</h3>
                     <p class="project__description">
@@ -380,15 +468,18 @@
                     <li>Gimp</li>
                     </ul>
 
-                    <a href="https://www.magasinetkbh.dk/foto/efteraar-atle-winther" class="project__link text-sm">Magasinet KBH</a>
+                    <a href="https://www.magasinetkbh.dk/foto/efteraar-atle-winther" aria-label="Se artiklen på Magasinet Kbh" class="project__link text-sm">Magasinet KBH</a>
                    
                 </div>
             </div>
 
-            <div class="project__item grid mix digital" data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000">
-                <img src="img/c_image_5.png" alt="partikler i 3d" class="project__img">
+            <div class="project__item grid mix digital">
+                <img src="https://awonline.b-cdn.net/c_image_5.avif" 
+                srcset="https://awonline.b-cdn.net/c_image_medium.avif 640w, 
+                https://awonline.b-cdn.net/c_image_small.avif 320w, 
+                https://awonline.b-cdn.net/c_image_5.avif 768w" 
+                sizes="50vw" 
+                alt="partikler i 3d" class="project__img">
                 <div class="project__data">
                     <h3 class="project__title text-lg">Partikler</h3>
                     <p class="project__description">
@@ -402,15 +493,18 @@
                     <li>VEX</li>
                     </ul>
 
-                    <a href="https://www.youtube.com/watch?v=2VSUYYWWWEc" class="project__link text-sm">video</a>
+                    <a href="https://www.youtube.com/watch?v=2VSUYYWWWEc" aria-label="Se video på youtube" class="project__link text-sm">video</a>
                    
                 </div>
             </div>
 
-            <div class="project__item grid mix software" data-aos="flip-right"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000">
-                <img src="img/img_4179.jpg" alt="touchskærm til lægekonference" class="project__img">
+            <div class="project__item grid mix software">
+                <img src="https://awonline.b-cdn.net/img_4179.avif" 
+                srcset="https://awonline.b-cdn.net/img_4179_medium.avif 640w, 
+                https://awonline.b-cdn.net/img_4179_small.avif 320w, 
+                https://awonline.b-cdn.net/img_4179.avif 768w" 
+                sizes="50vw" 
+                alt="touchskærm til lægekonference" class="project__img">
                 <div class="project__data">
                     <h3 class="project__title text-lg">Touchskærm</h3>
                     <p class="project__description">
@@ -421,15 +515,18 @@
                     <li>Fortroligt</li>
                     </ul>
 
-                    <a href="https://www.sobi.com/en" class="project__link text-sm">sobi</a>
+                    <a href="https://www.sobi.com/en" aria-label="Læs mere på Sobi" class="project__link text-sm">sobi</a>
                    
                 </div>
             </div>
 
-            <div class="project__item grid mix foto" data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000">
-                <img src="img/IMG_0616.JPG" alt="operaen" class="project__img">
+            <div class="project__item grid mix foto">
+                <img src="https://awonline.b-cdn.net/IMG_0616.avif" 
+                srcset="https://awonline.b-cdn.net/IMG_0616_medium.avif 640w, 
+                https://awonline.b-cdn.net/IMG_0616_small.avif 320w, 
+                https://awonline.b-cdn.net/IMG_0616.avif 768w" 
+                sizes="50vw" 
+                alt="operaen" class="project__img">
                 <div class="project__data">
                     <h3 class="project__title text-lg">Operaen</h3>
                     <p class="project__description">
@@ -440,15 +537,18 @@
                     <li>DJI Mavic</li>
                     </ul>
 
-                    <a href="https://via.ritzau.dk/pressemeddelelse/solceller-pa-taget-af-den-kongelige-opera?publisherId=3885992&releaseId=13629766" class="project__link text-sm">ritzau</a>
+                    <a href="https://via.ritzau.dk/pressemeddelelse/solceller-pa-taget-af-den-kongelige-opera?publisherId=3885992&releaseId=13629766" aria-label="Læs mere på Ritzau" class="project__link text-sm">ritzau</a>
                    
                 </div>
             </div>
 
-            <div class="project__item grid mix software" data-aos="flip-right"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000">
-                <img src="img/IMG_0427.JPG" alt="HKH Kronprins Frederik" class="project__img">
+            <div class="project__item grid mix software">
+                <img src="https://awonline.b-cdn.net/IMG_0427.avif" 
+                srcset="https://awonline.b-cdn.net/IMG_0427_medium.avif 640w, 
+                https://awonline.b-cdn.net/IMG_0427_small.avif 320w, 
+                https://awonline.b-cdn.net/IMG_0427.avif 768w" 
+                sizes="50vw"
+                alt="HKH Kronprins Frederik" class="project__img">
                 <div class="project__data">
                     <h3 class="project__title text-lg">DI: Sports Tech</h3>
                     <p class="project__description">
@@ -463,15 +563,18 @@
                     <li>Linux</li>
                     </ul>
 
-                    <a href="https://helsingordagblad.dk/helsingoer/cecilie-var-overvaeldet-talte-om-foedder-og-saaler-med-kronprinsen" class="project__link text-sm">artikel: hd</a>
+                    <a href="https://helsingordagblad.dk/helsingoer/cecilie-var-overvaeldet-talte-om-foedder-og-saaler-med-kronprinsen" aria-label="Artikel på Helsingør Dagblad" class="project__link text-sm">Helsingør Dagblad</a>
                    
                 </div>
             </div>
 
-            <div class="project__item grid mix digital" data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000">
-                <img src="img/atlemgw-audi-r8-8-9dc7f849-snfe.jpg" alt="HKH Kronprins Frederik" class="project__img">
+            <div class="project__item grid mix digital">
+                <img src="https://awonline.b-cdn.net/audi.avif" 
+                srcset="https://awonline.b-cdn.net/audi_medium.avif 640w, 
+                https://awonline.b-cdn.net/audi_small.avif 320w, 
+                https://awonline.b-cdn.net/audi.avif 768w" 
+                sizes="50vw" 
+                alt="Audi R8 3D model" class="project__img">
                 <div class="project__data">
                     <h3 class="project__title text-lg">AUDI R8</h3>
                     <p class="project__description">
@@ -483,7 +586,7 @@
                     <li>Mantra</li>
                     </ul>
 
-                    <a href="https://atlemgw.cgsociety.org/snfe/audi-r8" class="project__link text-sm">CG Society</a>
+                    <a href="https://atlemgw.cgsociety.org/snfe/audi-r8" aria-label="Se 3D modellen på CG Society" class="project__link text-sm">CG Society</a>
                    
                 </div>
             </div>
@@ -544,8 +647,28 @@
     <h2 class="section__title">Blog_</h2>
 
     <div class="posts__container grid">
-        <a href="blog_details.html" class="post__card">
-            <img src="img/pexels-element-digital-1370296.jpg" alt="bibliotek" class="post__img">
+
+        <a href="blog_details_v4.html" aria-label="Læs mere om mine erfaringer med SEO" class="post__card">
+            <img src="https://awonline.b-cdn.net/seo.avif" 
+            srcset="https://awonline.b-cdn.net/seo_medium.avif 640w, 
+            https://awonline.b-cdn.net/seo.avif 768w" 
+            sizes="95vw" 
+            alt="SEO skrevet på klodser" class="post__img">
+        
+            <div class="post__content">
+                <p class="post__date text-xs">22. september 2023</p>
+                <h3 class="post__title text-sm">SEO del I</h3>
+                <p class="post__description text-sm">Jeg følte at det kunne være sjovt at se hvor langt man kan komme ved at arbejde med SEO til hjemmesiden. Dette er første del, hvor jeg gennemgår den mere tekniske del af Søgemaskineoptimeringen.  </p>
+            </div>
+
+        </a>
+
+        <a href="blog_details.html" aria-label="Læs mere om mine bøger i 23" class="post__card">
+            <img src="https://awonline.b-cdn.net/pexels-element-digital-1370296.avif" 
+            srcset="https://awonline.b-cdn.net/pexels-element-digital-1370296_medium.avif 640w, 
+            https://awonline.b-cdn.net/pexels-element-digital-1370296.avif 768w" 
+            sizes="95vw" 
+            alt="bibliotek" class="post__img">
         
             <div class="post__content">
                 <p class="post__date text-xs">28. august 2023</p>
@@ -554,8 +677,12 @@
             </div>
         </a>
 
-        <a href="blog_details_v2.html" class="post__card">
-            <img src="img/pexels-pixabay-270360.jpg" alt="skærm med koder" class="post__img">
+        <a href="blog_details_v2.html" aria-label="Læs mere om min hjemmeside" class="post__card">
+            <img src="https://awonline.b-cdn.net/pexels-pixabay-270360.avif" 
+            srcset="https://awonline.b-cdn.net/pexels-pixabay-270360_medium.avif 640w, 
+            https://awonline.b-cdn.net/pexels-pixabay-270360.avif 768w" 
+            sizes="95vw" 
+            alt="skærm med koder" class="post__img">
         
             <div class="post__content">
                 <p class="post__date text-xs">24. august 2023</p>
@@ -564,8 +691,12 @@
             </div>
         </a>
 
-        <a href="blog_details_v3.html" class="post__card">
-            <img src="img/IMG_3346.jpg" alt="" class="post__img">
+        <a href="blog_details_v3.html" aria-label="Læs mere om min vandretur på Jotunheimstien" class="post__card">
+            <img src="https://awonline.b-cdn.net/IMG_3346.avif" 
+            srcset="https://awonline.b-cdn.net/IMG_3346_medium.avif 640w, 
+            https://awonline.b-cdn.net/IMG_3346.avif 768w" 
+            sizes="95vw" 
+            alt="Norsk højskov" class="post__img">
         
             <div class="post__content">
                 <p class="post__date text-xs">18. august 2023</p>
@@ -574,6 +705,8 @@
             </div>
 
         </a>
+
+        
     </div>
 
 </section>
@@ -596,45 +729,46 @@
                     </dl>
 
                     <ul class="contact__socials">
+                       
                         <li>
-                            <a href="https://journalistforbundet.dk/freelancer/atle-m-g-winther" class="contact__social_link">Journalistforbundet</a>
+                            <a href="https://www.instagram.com/atle.winther/" aria-label="Link til Instagram" class="contact__social_link">Instagram</a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/atle.winther/" class="contact__social_link">Instagram</a>
+                            <a href="https://mograph.social/@atle" aria-label="Link til Mastodon" class="contact__social_link">Mastodon</a>
                         </li>
                         <li>
-                            <a href="https://mograph.social/@atle" class="contact__social_link">Mastodon</a>
-                        </li>
-                        <li>
-                            <a href="https://blog.folkeskolen.dk/atle-winther" class="contact__social_link">Folkeskolen-blog</a>
+                            <a href="https://blog.folkeskolen.dk/atle-winther" aria-label="Link til Folkeskolen.dk" class="contact__social_link">Folkeskolen.dk</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="contact__form">
-                    <p class="contact__form-title">Skriv her__</p>
+                    <p class="contact__form-title">Skriv her_</p>
 
-                    <form action="" id="contact-form">
+                    <form id="contact-form">
+                        <p>navn</p>
                         <div class="contact__input-div">
                             <input 
                             type="text" 
                             name="name"
-                            placeholder="Dit navm"
+                            aria-label="skriv navn"
                             class="contact__input"
                             id="contact-name">
                         </div>
+                        <p>e-mail</p>
                         <div class="contact__input-div">
                             <input 
                             type="email" 
                             name="email"
-                            placeholder="Din mail"
+                            aria-label="skriv e-mail"
                             class="contact__input"
                             id="contact-email">
                         </div>
+                        <p>besked</p>
                         <div class="contact__input-div">
                             <textarea 
                             name="message"
-                            placeholder="Skriv din besked her" 
+                            aria-label="skriv besked"
                             class="contact__input textarea"
                             id="message" 
                             cols="30" 
@@ -643,28 +777,47 @@
                         </div>
 
                         <p class="contact__message text" id="contact-message">
-                            Besked
+                            
                         </p>
-                        <button type="submit" class="button contact__button">SEND</button>
+                        <button type="submit" aria-label="Indsend kontaktformular" class="button contact__button">SEND</button>
                     </form>
-                    <p class="footer__copy">Atle Winther 2023</p>
                </div>
               </div>
            </div>
-      </section>
+
+
+           <div class="cwrapper">
+            <header>
+              <i class="bx bx-cookie"></i>
+              <h2>Cookies</h2>
+            </header>
+      
+            <div class="data">
+              <p>Ved at fortsætte med at bruge hjemmesiden accepterer du brug af cookies. Du kan finde flere oplysninger om, hvordan siden bruger cookies, og hvordan du administrerer dine cookie-indstillinger i <a href="cookies.html">Cookie- og Privatlivspolitik</a></p>
+            </div>
+      
+            <div class="buttons">
+              <button class="button" aria-label="Accept af cookies" id="acceptBtn">Accept</button>
+              <button class="button" aria-label="Nej tak til cookies" id="declineBtn">Nej tak</button>
+            </div>
+          </div>
+      
+
+
+
+           <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fatlewinther.dk%2F" aria-label="Se atlewinther.dk validering på W3C"> <img src="img/valid-html401.png" width="88" height="31" alt="W3C Validation"> </a>
+           <img src="img/IMG_4227.avif" width="88" height="31" alt="WCAG 2.1 ikon">
+
+
   </main>
 
 
 
     <script src="script/mixitup.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-      </script>
+   
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script src="script/main.js"></script>
-    <script src="script/common.js"></script>
-    <script src="script/nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script/mini.main.js"></script>
+    <script src="script/mini.nav.js"></script>
 </body>
 </html>

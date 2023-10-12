@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "aos": "^2.3.4",
+    "sharp": "^0.32.6"
+  },
+  "name": "homepage3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
